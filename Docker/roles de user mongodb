@@ -1,0 +1,32 @@
+{
+	"_id" : "admin.administrador1",
+	"userId" : UUID("9bd75a71-ff5d-45de-8cc2-cf138caa1e2e"),
+	"user" : "administrador1",
+	"db" : "admin",
+	"roles" : [
+		{
+			"role" : "readWriteAnyDatabase",
+			"db" : "admin"
+		}
+	],
+	"mechanisms" : [
+		"SCRAM-SHA-1",
+		"SCRAM-SHA-256"
+	]
+}
+{
+	"_id" : "admin.root",
+	"userId" : UUID("3a9aac02-0944-4638-b8fd-0fa96d92dc77"),
+	"user" : "root",
+	"db" : "admin",
+	"roles" : [
+		{
+			"role" : "userAdminAnyDatabase",
+			"db" : "admin"
+		}
+	],
+	"mechanisms" : [
+		"SCRAM-SHA-1",
+		"SCRAM-SHA-256"
+	]
+}

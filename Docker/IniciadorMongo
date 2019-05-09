@@ -1,0 +1,10 @@
+#!/bin/bash
+           
+               if [ $1 = "start" ]; then
+                  mongod --config /etc/mongod.conf > /dev/null &
+               elif [ $1 = "stop" ]; then
+                  mongo --username "root" --authenticationDatabase "admin" --password "25448132"  --eval "db.getSiblingDB('admin').shutdownServer()"
+               else
+                echo "No se logro habilitar ninguna opcion valida"
+               fi
+           exit

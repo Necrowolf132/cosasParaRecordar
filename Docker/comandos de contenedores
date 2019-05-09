@@ -1,0 +1,7 @@
+netstat -punlt |grep ':27017'
+
+mongo  mongodb://localhost:33345/test?authSource=admin --username administrador1 -p "25448132"
+
+## iniciador de contenedores
+
+sudo docker run --name Entorno-express-1.1 --hostname Entorno-express-1.1 --privileged=true --entrypoint=/bin/bash -p 33345:27017 -p 33346:80 -v /home/necrowolf/carpetaDeIntercambioDocker:/home:rw -it  entorno-express:1.1

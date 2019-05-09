@@ -1,0 +1,2 @@
+db.updateUser("root",{roles : [{ "role" : "readWriteAnyDatabase", "db" : "admin" }, { "role" : "userAdminAnyDatabase", "db":"admin" }, { "role" : "clusterAdmin", "db":"admin"}]});		{
+
