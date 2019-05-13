@@ -1,2 +1,3 @@
 db.updateUser("root",{roles : [{ "role" : "readWriteAnyDatabase", "db" : "admin" }, { "role" : "userAdminAnyDatabase", "db":"admin" }, { "role" : "clusterAdmin", "db":"admin"}]});		{
 
+db.createUser({user: "administrador1",pwd: "25448132", roles : [{ "role" : "readWriteAnyDatabase", "db" : "admin" }, { "role" : "userAdminAnyDatabase", "db":"admin" }, { "role" : "clusterAdmin", "db":"admin"}})
