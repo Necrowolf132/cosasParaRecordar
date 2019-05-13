@@ -5,3 +5,5 @@ mongo  mongodb://localhost:33345/test?authSource=admin --username administrador1
 ## iniciador de contenedores
 
 sudo docker run --name Entorno-express-1.1 --hostname Entorno-express-1.1 --privileged=true --entrypoint=/bin/bash -p 33345:27017 -p 33346:80 -v /home/necrowolf/carpetaDeIntercambioDocker:/home:rw -it  entorno-express:1.1
+
+sudo docker run --name servidor-de-correos:1.0 --hostname correo-previasistenciaserver.mooo.com --privileged=true --entrypoint=/bin/bash -p 1125:25 -p 1143:143 -p 1180:80 -v /home/administrador1/carpetaDeIntercambioDocker:/home:rw -it  debian:stretch
