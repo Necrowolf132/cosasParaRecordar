@@ -1,0 +1,7 @@
+####### Cuando no levanto y no da puesto por que  no lo levantaste primero con privilegios de administrador ######
+
+1- Abrir cmd.
+2- En cmd, vaya a la carpeta xampp / mysql / data. En mi caso, hice lo siguientecd C:\xampp\mysql\data
+3- Ejecutar aria_chk -ren ese directorio para todas las .MAItablas en la subcarpeta mysql. En mi caso,..\bin\aria_chk -r mysql\*.MAI
+4- Eliminar todos los aria_log.########archivos. Están presentes en la carpeta C: \ xampp \ mysql \ data. Acabo de cambiarles el nombre por si acaso (agregado old_al comienzo de sus nombres).
+5- Inicie xampp nuevamente y debería estar funcionando.
